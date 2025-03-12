@@ -9,22 +9,28 @@ const memes = [
   "meme-7.png",
   "meme-8.png",
   "meme-9.png",
-  "meme-10.png",
+  "meme-11.jpg",
+  "meme-12.jpg",
+  "meme-13.jpg",
+  "meme-14.jpg",
+  "meme-15.jpg",
+  "meme-16.jpg",
+  "meme-17.jpg",
+  "meme-18.jpg",
+  "meme-19.jpg",
+  "meme-20.jpg",
+  "meme-21.jpg",
+  "meme-22.jpg",
+  "meme-23.jpg",
+  "meme-24.jpg",
+  "meme-25.jpg",
 ];
 
-// Variables
+// Get the meme container
 let memeBox = document.getElementById("meme-container");
-// let fCircle = document.getElementById("circle1");
-// let sCircle = document.getElementById("circle2");
-let oMeme = document.getElementById("memeContainer");
-const hero = document.getElementById("hero");
 
+// display random meme
 function getMeme() {
   let randomMeme = Math.floor(Math.random() * memes.length);
-  memeBox.innerHTML = `<img style="width: 100%; object-fit: contain" src="./images/memes/${memes[randomMeme]}" alt="meme" />`;
-
-  // fCircle.classList.add("swing-circle1");
-  // sCircle.classList.add("swing-circle2");
-
-  // oMeme.classList.add("open-meme");
+  memeBox.innerHTML = `<img style="height: 100%; object-fit: contain" src="./images/memes/${memes[randomMeme]}" alt="meme" />`;
 }
