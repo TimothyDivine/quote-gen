@@ -1,0 +1,231 @@
+body {
+  animation-name: body;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.memecontainer {
+  transform: scale(0);
+}
+
+.open-meme {
+  transform: scale(1);
+   transition: 0.4s ease;
+}
+
+@keyframes body {
+  0% {
+    background-image: url(/WhatsApp\ Image\ 2025-03-11\ at\ 15.49.55_529db4c7.jpg);
+    transition: 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+50% {
+  background-image: url(/about-us-information-service-sharing-join-concept.jpg);
+  transition: 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+  100% {
+    background-image: url(/WhatsApp\ Image\ 2025-03-11\ at\ 15.49.54_1e0289da.jpg);
+    transition: 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+button {
+  border: 1px solid white;
+  color: white;
+  height: 2rem;
+  width: 80%;
+  font-weight: 600;
+  margin-top: 2rem;
+  border-radius: 10px;
+  animation-name: button;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 30ms;
+  box-shadow: 0 0 100px #000;
+}
+
+@keyframes button {
+  0% {
+    background-image: linear-gradient(to right, blue, lime, blue);
+  }
+
+  100% {
+    background-image: linear-gradient(to left, lime, blue, lime);
+  }
+}
+
+button:hover {
+  background: white;
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+  height: 2.2rem;
+  width: 80%;
+  transition: 0.5s ease-in-out;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+.container {
+  margin-top: 3%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 18%;
+}
+
+.content {
+  display: grid;
+  justify-content: center;
+  background-image: url(/file-F3KAmbcNQi6qBDck857W6k.webp);
+  align-items: center;
+  max-height: 130px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px #fff;
+  animation-name: outline2;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 30ms;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 5%;
+  scale: 1.2;
+}
+
+h1 {
+}
+
+main {
+  background-image: radial-gradient(purple, #000);
+  margin-right: 30%;
+  margin-left: 30%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  scale: 1.5;
+  height: 60vh;
+  border-radius: 10px;
+  animation-name: outline;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 30ms;
+  box-shadow: 0 0 100px #000;
+}
+
+.first-circle1 {
+  background-color: black;
+  padding: 5px 10px;
+  margin-top: 1rem;
+  margin-left: 55rem;
+  outline: 3px solid purple;
+  border-radius: 50%;
+  height: 10vh;
+  color: black;
+  width: 4%;
+  scale: 0.8;
+}
+
+.first-circle2 {
+  background-color: black;
+  padding: 5px 10px;
+  margin-top: -4rem;
+  margin-left: 20rem;
+  outline: 3px solid purple;
+  border-radius: 50%;
+  height: 10vh;
+  color: black;
+  width: 4%;
+  scale: 0.8;
+}
+
+.swing-circle1 {
+  animation-name: swing1;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 30ms;
+}
+
+.swing-circle2 {
+  animation-name: swing2;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 30ms;
+}
+
+@keyframes swing1 {
+  0% {
+    background-color: orange;
+  }
+
+  100% {
+    transform: translate(-1000%);
+    transition: 0.3s ease-in;
+    background-color: blue;
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    background-color: red;
+  }
+
+  100% {
+    transform: translate(1000%);
+    transition: 0.3s ease-in;
+    background-color: lime;
+  }
+}
+
+@keyframes outline {
+  /* making the outline to be moving aroung the screen */
+
+  0% {
+    outline: 5px solid lime;
+  }
+
+  50% {
+    outline: 5px solid blue;
+  }
+  75% {
+    outline: 5px solid rgb(221, 31, 221);
+  }
+
+  100% {
+    outline: 5px solid rgb(0, 229, 255);
+  }
+}
+
+@keyframes outline2 {
+  /* making the outline to be moving aroung the screen */
+
+  0% {
+    outline: 5px solid rgb(0, 229, 255);
+  }
+
+  50% {
+    outline: 5px solid lime;
+  }
+  75% {
+    outline: 5px solid blue;
+  }
+
+  100% {
+    outline: 5px solid rgb(221, 31, 221);
+  }
+}
