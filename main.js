@@ -1,49 +1,30 @@
-//ARRAYS
-
+// Meme Data
 const memes = [
-  {
-    meme: "Divine is denying that success is his girlfriend",
-    author: "Kehleon",
-  },
-
-  {
-    meme: "Isaac creates bug in his code we call him THE_BUGGER",
-    author: "MrDee",
-  },
-  {
-    meme: "Kehleon built a website to embezzle people's money🤣",
-    author: "Isaac",
-  },
-  {
-    meme: "Hacker trying know why he cant see my password, me that set my password to ******",
-    author: "Boy Alone"
-  },
-  {
-    meme: "The said that solace is SOUL_LESS",
-    author: "MrDee"
-  }
+  "meme-1.png",
+  "meme-2.png",
+  "meme-3.png",
+  "meme-4.png",
+  "meme-5.png",
+  "meme-6.png",
+  "meme-7.png",
+  "meme-8.png",
+  "meme-9.png",
+  "meme-10.png",
 ];
 
+// Variables
+let memeBox = document.getElementById("meme-container");
+// let fCircle = document.getElementById("circle1");
+// let sCircle = document.getElementById("circle2");
+let oMeme = document.getElementById("memeContainer");
+const hero = document.getElementById("hero");
+
 function getMeme() {
-  // VARIBLES
-  let myMeme = document.getElementById("myMeme");
-  let myAuthor = document.getElementById("myAuthor");
   let randomMeme = Math.floor(Math.random() * memes.length);
-  let fCircle = document.getElementById("circle1");
-  let sCircle = document.getElementById("circle2");
-  let oMeme = document.getElementById("memeContainer");
-  const hero = document.getElementById("hero");
-  
-  //ASSIGNMENTS
-  myMeme.textContent = memes[randomMeme].meme;
-  myAuthor.textContent = memes[randomMeme].author;
+  memeBox.innerHTML = `<img style="width: 100%; object-fit: contain" src="./images/memes/${memes[randomMeme]}" alt="meme" />`;
 
-  fCircle.classList.add("swing-circle1");
-  sCircle.classList.add("swing-circle2");
+  // fCircle.classList.add("swing-circle1");
+  // sCircle.classList.add("swing-circle2");
 
-  oMeme.classList.add("open-meme");
-
-  hero.style.display = "none";
+  // oMeme.classList.add("open-meme");
 }
-
-

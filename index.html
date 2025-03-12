@@ -7,34 +7,25 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- MAIN -->
+    <!-- main -->
     <main>
-      <section>
-        <h1 class="title">Meme Generator</h1>
-        <div class="content">
-          <div class="container">
-            <blockquote id="memeContainer" class="memecontainer">
-              <p id="myMeme">The said that solace is SOUL_LESS</p>
-              <footer id="myAuthor">MrDee</footer>
-            </blockquote>
+      <h1 class="title">Meme Generator</h1>
 
-            <blockquote class="hero" id="hero" style="margin-top: -25%">
-              <p id="myMeme">
-                Welcome to Meme Generator <br />
-                Generate your Meme
-              </p>
-              <footer id="myAuthor" style="opacity: 0">MrDee</footer>
-            </blockquote>
-            <button onclick="getMeme()">Generate</button>
-          </div>
-        </div>
-      </section>
+      <blockquote id="meme-container" class="meme-container">
+        <p id="meme">Welcome to our random meme generator</p>
+        <footer id="author">
+          Click the "Generate" button to get a new meme
+        </footer>
+      </blockquote>
+
+      <button onclick="getMeme()">Generate</button>
+
+      <!-- <section>
+        <div class="first-circle1" id="circle1">.</div>
+        <div class="first-circle2" id="circle2">.</div>
+      </section> -->
     </main>
 
-    <section>
-      <div class="first-circle1" id="circle1">.</div>
-      <div class="first-circle2" id="circle2">.</div>
-    </section>
     <script src="./main.js"></script>
   </body>
 </html>
