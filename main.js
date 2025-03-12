@@ -17,6 +17,10 @@ const memes = [
   {
     meme: "Hacker trying know why he cant see my password, me that set my password to ******",
     author: "Boy Alone"
+  },
+  {
+    meme: "The said that solace is SOUL_LESS",
+    author: "MrDee"
   }
 ];
 

@@ -4,6 +4,10 @@ body {
   animation-delay: 1.5s;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
+  background-image: url(/about-us-information-service-sharing-join-concept.jpg);
+  transition: 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .memecontainer {
@@ -12,7 +16,7 @@ body {
 
 .open-meme {
   transform: scale(1);
-   transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 @keyframes body {
@@ -23,13 +27,13 @@ body {
     background-size: cover;
   }
 
-50% {
-  background-image: url(/about-us-information-service-sharing-join-concept.jpg);
-  transition: 0.5s ease;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-  
+
+  50% {
+    background-image: url(/about-us-information-service-sharing-join-concept.jpg);
+    transition: 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   100% {
     background-image: url(/WhatsApp\ Image\ 2025-03-11\ at\ 15.49.54_1e0289da.jpg);
     transition: 0.5s ease;
@@ -70,7 +74,7 @@ button:hover {
   color: white;
   height: 2.2rem;
   width: 80%;
-  transition: 0.5s ease-in-out;
+  transition: 0.1s ease-in-out;
   margin-top: 2rem;
   border-radius: 2rem;
 }
@@ -142,7 +146,7 @@ main {
 .first-circle2 {
   background-color: black;
   padding: 5px 10px;
-  margin-top: -4rem;
+  margin-top: -4.5rem;
   margin-left: 20rem;
   outline: 3px solid purple;
   border-radius: 50%;
