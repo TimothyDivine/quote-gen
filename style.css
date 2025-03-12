@@ -27,7 +27,6 @@ body {
     background-size: cover;
   }
 
-
   50% {
     background-image: url(/about-us-information-service-sharing-join-concept.jpg);
     transition: 0.5s ease;
@@ -106,9 +105,6 @@ button:hover {
   max-width: 300px;
   margin-bottom: 5%;
   scale: 1.2;
-}
-
-h1 {
 }
 
 main {
